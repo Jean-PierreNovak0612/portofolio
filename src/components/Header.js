@@ -13,14 +13,13 @@ const Header = ({ links = [] }) => {
 
     const renderLinkWithSublinks = (link) => {
         return (
-            <li key={link.title}>
+            <li key={link.title} className="nav-parent-link">
                 <Link className="nav-link desktop-link" to={link.location}>{link.title}</Link>
                 <label htmlFor={`sublinks-${link.position}`} className="nav-link">{link.title} +</label>
                 <input type="checkbox" id={`sublinks-${link.position}`} className="sublinks-toggle" />   
                 <ul className="sublinks">
                     {renderSublinks(link.sublinks)}
-                </ul>
-                             
+                </ul>     
             </li>
         )
     }

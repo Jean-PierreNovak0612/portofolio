@@ -311,30 +311,33 @@ input[type='checkbox'] {
 
 	nav {
 		all: unset;
-		height: 100%;
 		grid-column: 3 / 4;
 		display: flex;
 		justify-content: flex-end;
-		align-items: center;
 	}
 
 	nav label {
 		display: none;
 	}
 
-	nav .desktop-link {
-		display: block;
+	nav ul {
+		text-align: right;
 	}
 
-	nav ul {
-		display: flex;
-		justify-content: flex-end;
+	nav ul li {
+		display: inline-block;
+		margin-top: 1em;
 	}
 
 	nav .nav-link {
 		opacity: 1;
 		margin-left: 1em;
+		padding: 0.75em 0;
 		position: relative;
+	}
+
+	nav .desktop-link {
+		display: block;
 	}
 
 	nav .nav-link::before {
@@ -343,11 +346,11 @@ input[type='checkbox'] {
 		height: 5px;
 		background: #fff;
 		position: absolute;
-		bottom: -0.5em;
+		bottom: -0.1em;
 		left: 0;
 		right: 0;
 		transform: scale(0, 1);
-		transition: transform 150ms ease-in-out;
+		transition: transform ease-in-out 250ms;
 	}
 
 	nav .nav-link:hover::before {
@@ -363,7 +366,7 @@ input[type='checkbox'] {
 		background-color: var(--navbarBackground);
 		opacity: 0;
 		visibility: hidden;
-		transition: top 0.3s;
+		transition: top 0.3s ease-in-out, opacity 600ms ease-in-out;
 	}
 
 	nav ul li:hover > .sublinks {
@@ -376,7 +379,7 @@ input[type='checkbox'] {
 		position: relative;
 		text-align: left;
 		margin: 0;
-		padding: 1em 0;
+		padding: 1em 0 1.5em;
 		display: list-item;
 	}
 }
