@@ -9,6 +9,7 @@ header {
 	z-index: 100;
 	width: 100%;
 }
+
 .logo {
 	text-decoration: none;
 	color: #fff;
@@ -104,13 +105,13 @@ input[type='checkbox'] {
 }
 
 .toggle-navbar:checked + .toggle-nav-label .hamburger-icon {
-	animation: moveLeft 2s;
+	animation: moveLeft 1s;
 	opacity: 0;
 }
 
 .toggle-navbar:checked + .toggle-nav-label .hamburger-icon::before,
 .toggle-navbar:checked + .toggle-nav-label .hamburger-icon::after {
-	animation: moveRight 2s;
+	animation: moveRight 1s;
 	opacity: 0;
 }
 
@@ -169,13 +170,13 @@ input[type='checkbox'] {
 .toggle-navbar:checked + .toggle-nav-label .close-nav-icon {
 	top: 50%;
 	animation: moveFirstToBottom;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	opacity: 1;
 }
 
 .toggle-navbar:checked ~ .toggle-nav-label .close-nav-icon:before {
 	animation: moveSecondToBottom;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	opacity: 1;
 }
 
@@ -208,12 +209,12 @@ input[type='checkbox'] {
 }
 
 .toggle-navbar:not(:checked) + .toggle-nav-label .close-nav-icon:before {
-	animation: moveFirstToTop 2s;
+	animation: moveFirstToTop 1s;
 	opacity: 0;
 }
 
 .toggle-navbar:not(:checked) + .toggle-nav-label .close-nav-icon {
-	animation: moveSecondToTop 3s;
+	animation: moveSecondToTop 2s;
 	opacity: 0;
 }
 
@@ -246,13 +247,13 @@ input[type='checkbox'] {
 }
 
 .toggle-navbar:not(:checked) + .toggle-nav-label .hamburger-icon {
-	animation: moveBackRight 3s;
+	animation: moveBackRight 2s;
 	opacity: 1;
 }
 
 .toggle-navbar:not(:checked) + .toggle-nav-label .hamburger-icon::before,
 .toggle-navbar:not(:checked) + .toggle-nav-label .hamburger-icon::after {
-	animation: moveBackLeft 3s;
+	animation: moveBackLeft 2s;
 	opacity: 1;
 }
 
