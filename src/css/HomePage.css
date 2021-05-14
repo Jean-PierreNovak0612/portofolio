@@ -1,0 +1,6 @@
+main {
+	padding-top: 85px;
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: auto;
+}

@@ -8,7 +8,7 @@ const Footer = ({ links, social }) => {
     const renderSocialLinks = () => {
         if(!social) return null;
         return social.map(link => {
-            return <a key={link.title} target="_blank" href={link.location} className="footer-social-link"><i className={`bi bi-${link.title}`} /></a>
+            return <a key={link.title} target="_blank" rel="noreferrer" href={link.location} className="footer-social-link"><i className={`bi bi-${link.title}`} /></a>
         })
     }
     

@@ -56,4 +56,10 @@ export const SOCIAL_LINKS = [
         title: "github",
         location: "https://github.com/Jean-PierreNovak0612"
     }
-]
+];
+
+export const IMAGE1_URL = `${process.env.PUBLIC_URL}/images/code.png`;
+
+export const TITLE1 = "Check out my projects!";
+
+export const TEXT1 = "Check out my list of project that are currently awailable online!"
