@@ -1,5 +1,5 @@
 :root {
-	--navbarBackground: rgb(38, 48, 43);
+	--navbarBackground: rgb(66, 58, 87);
 }
 
 header {
@@ -247,13 +247,13 @@ input[type='checkbox'] {
 }
 
 .toggle-navbar:not(:checked) + .toggle-nav-label .hamburger-icon {
-	animation: moveBackRight 2s;
+	animation: moveBackRight 1.5s;
 	opacity: 1;
 }
 
 .toggle-navbar:not(:checked) + .toggle-nav-label .hamburger-icon::before,
 .toggle-navbar:not(:checked) + .toggle-nav-label .hamburger-icon::after {
-	animation: moveBackLeft 2s;
+	animation: moveBackLeft 1.5s;
 	opacity: 1;
 }
 
@@ -360,7 +360,6 @@ input[type='checkbox'] {
 	nav ul .sublinks {
 		display: block;
 		position: absolute;
-		width: 450px;
 		top: 100%;
 		border-top: 5px solid #fff;
 		background-color: var(--navbarBackground);
@@ -379,7 +378,7 @@ input[type='checkbox'] {
 		position: relative;
 		text-align: left;
 		margin: 0;
-		padding: 1em 0 1.5em;
+		padding: 1em 1em 1.5em;
 		display: list-item;
 	}
 }
