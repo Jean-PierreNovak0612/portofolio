@@ -1,9 +1,5 @@
-:root {
-	--navbarBackground: rgb(66, 58, 87);
-}
-
 header {
-	background-color: var(--navbarBackground);
+	background-color: var(--navbarFooterBackground);
 	text-align: center;
 	position: fixed;
 	z-index: 100;
@@ -20,7 +16,7 @@ nav {
 	text-align: left;
 	top: 100%;
 	left: 0;
-	background-color: var(--navbarBackground);
+	background-color: var(--navbarFooterBackground);
 	width: 100%;
 	transform: scale(1, 0);
 	transition: transform 500ms ease-in-out 350ms;
@@ -362,7 +358,7 @@ input[type='checkbox'] {
 		position: absolute;
 		top: 100%;
 		border-top: 5px solid #fff;
-		background-color: var(--navbarBackground);
+		background-color: var(--navbarFooterBackground);
 		opacity: 0;
 		visibility: hidden;
 		transition: top 0.3s ease-in-out, opacity 600ms ease-in-out;

@@ -1,29 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import '../css/Footer.css';
+
 const Footer = ({ links, social }) => {
 
     const renderSocialLinks = () => {
         if(!social) return null;
         return social.map(link => {
-            return <Link to={link.location} className="foorer-link"><i className={`bi bi-${link.title}`} /></Link>
+            return <a key={link.title} target="_blank" href={link.location} className="footer-social-link"><i className={`bi bi-${link.title}`} /></a>
         })
     }
     
     const renderLinks = () => {
         if(!links) return null;
         return links.map(link => {
-            return <Link to={link.location} className="footer-link">{link.title}</Link>
+            return <Link key={link.title} to={link.location} className="footer-link">{link.title}</Link>
         })
     }
 
     return (
         <footer>
             <div>
-                <div className="page-links">
+                <div className="links">
                     {renderLinks()}
                 </div>
-                <div className="social-links">
+                <div className="links">
                     {renderSocialLinks()}
                 </div>
             </div>
