@@ -70,7 +70,7 @@ export const SEGMENT1 = {
 export const SEGMENT2 = {
     imageUrl: `${process.env.PUBLIC_URL}/images/thinking.png`,
     title: "But who am I?",
-    text: "I am a self-taught web developer. My journey started in 2018 and is still ongoing ...",
+    text: "I am a self-taught web developer. My journey started in 2018 and is still ongoing...",
     link: "/projects",
     imagePosition: "right",
     buttonText: "Read more!"
