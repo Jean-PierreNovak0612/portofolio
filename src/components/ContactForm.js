@@ -71,8 +71,8 @@ const ContactForm = ({ from }) => {
                 <input name="email" autoComplete='off' className={emailError} value={email} onChange={(e) => setEmail(e.target.value)} id="input-email" type="email" placeholder="johndoe@gmail.com" />
                 <div className={`${emailError} message`}>You must enter a valid email!</div>
 
-                <label htmlFor="input-subject">Message :</label>
-                <textarea name="message" className={messageError} value={message} onChange={(e) => setMessage(e.target.value)} id="input-subject" placeholder="Hi there!" />
+                <label htmlFor="input-message">Message :</label>
+                <textarea name="message" className={messageError} value={message} onChange={(e) => setMessage(e.target.value)} id="input-message" placeholder="Hi there!" />
                 <div className={`${messageError} message`}>You must enter a valid message!</div>
 
                 <div className={`${successMessage} message`}>Your message has been sent!</div>
