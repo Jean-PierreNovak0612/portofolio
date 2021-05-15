@@ -18,7 +18,16 @@ const ContactForm = ({ from }) => {
 
     const mainClass = from === 'home' ? 'main-page' : '';
 
-    const sendEmail = (e) => {
+    const sendEmail = (data) => {
+        emailjs.sendForm('service_ri4oqmc', 'template_qo2p8p8', data, 'user_1UmZ4XzjHF4eiz5gzMPbv')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text)
+        });
+    }
+
+    const validate = (e) => {
         e.preventDefault();
 
         if(!email) setEmailError('error')
@@ -29,14 +38,9 @@ const ContactForm = ({ from }) => {
         else setSubjectError('')
         if(!message) setMessageError('error')
         else setMessageError('');
-        if(emailError || nameError || messageError || subjectError) return;
+        if(emailError !== null || nameError !== null || messageError !== null || subjectError !== null) return null;
 
-        emailjs.sendForm('service_ri4oqmc', 'template_qo2p8p8', e.target, 'user_1UmZ4XzjHF4eiz5gzMPbv')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text)
-        });
+        sendEmail(e.target)
 
         setSubject('')
         setMessage('');
@@ -53,7 +57,7 @@ const ContactForm = ({ from }) => {
     return (
         <div className={`${mainClass} contact-form`}>
             <h1>Contact me!</h1>
-            <form onSubmit={sendEmail}>
+            <form onSubmit={validate}>
 
                 <label htmlFor="input-subject">Subject :</label>
                 <input name="subject" autoComplete='off' className={subjectError} value={subject} onChange={(e) => setSubject(e.target.value)} id="input-subject" type="text" placeholder="Contact" />
