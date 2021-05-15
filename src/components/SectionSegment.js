@@ -11,7 +11,7 @@ const SectionSegment = ({ data }) => {
     const renderButton = () => {
         if(!data.link || !data.buttonText) return null;
         return (
-            <Link to={data.link} className="button-slide">{data.buttonText}</Link>
+            <Link to={data.link} className="button-slide button">{data.buttonText}</Link>
         )
     }
 

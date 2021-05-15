@@ -28,7 +28,7 @@
 	margin-bottom: 50px;
 }
 
-.button-slide {
+.button {
 	background-color: var(--navbarFooterBackground);
 	color: #fff;
 	border-radius: 10px;
@@ -38,11 +38,6 @@
 	transition: all 300ms ease-in-out;
 	font-weight: bolder;
 	border: 2px solid var(--navbarFooterBackground);
-}
-
-.button-slide:hover {
-	color: var(--navbarFooterBackground);
-	box-shadow: inset 15em 0 0 0 #bbb;
 }
 
 @media (min-width: 620px) {
@@ -72,5 +67,10 @@
 	.image-right,
 	.content-right {
 		float: right;
+	}
+
+	.button-slide:hover {
+		color: var(--navbarFooterBackground);
+		box-shadow: inset 15em 0 0 0 #bbb;
 	}
 }
