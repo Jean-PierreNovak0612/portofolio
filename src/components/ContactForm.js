@@ -68,7 +68,7 @@ const ContactForm = ({ from }) => {
                 <div className={`${nameError} message`}>You must enter a valid name!</div>
 
                 <label htmlFor="input-email">Email :</label>
-                <input name="email" autoComplete='off' className={emailError} value={email} onChange={(e) => setEmail(e.target.value)} id="input-email" type="text" placeholder="johndoe@gmail.com" />
+                <input name="email" autoComplete='off' className={emailError} value={email} onChange={(e) => setEmail(e.target.value)} id="input-email" type="email" placeholder="johndoe@gmail.com" />
                 <div className={`${emailError} message`}>You must enter a valid email!</div>
 
                 <label htmlFor="input-subject">Message :</label>
