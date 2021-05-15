@@ -38,7 +38,7 @@ const ContactForm = ({ from }) => {
         else setSubjectError('')
         if(!message) setMessageError('error')
         else setMessageError('');
-        if(emailError !== null || nameError !== null || messageError !== null || subjectError !== null) return null;
+        if(email === '' || name === '' || message === '' || subject === '') return null;
 
         sendEmail(e.target)
 
