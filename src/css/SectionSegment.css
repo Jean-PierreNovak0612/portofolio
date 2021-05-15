@@ -42,7 +42,7 @@
 
 .button-slide:hover {
 	color: var(--navbarFooterBackground);
-	box-shadow: inset 10em 0 0 0 #bbb;
+	box-shadow: inset 20em 0 0 0 #bbb;
 }
 
 @media (min-width: 768px) {

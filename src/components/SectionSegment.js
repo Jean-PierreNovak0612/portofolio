@@ -3,33 +3,33 @@ import { Link } from 'react-router-dom';
 
 import '../css/SectionSegment.css';
 
-const SectionSegment = ({ title, text, image, imagePosition = "left", link, buttonText }) => {
+const SectionSegment = ({ data }) => {
 
-    const imageClass = imagePosition === 'left' ? "image-left" : "image-right";
-    const contentClass = imagePosition === 'left' ? "content-left" : "content-right";
+    const imageClass = data.imagePosition === 'left' ? "image-left" : "image-right";
+    const contentClass = data.imagePosition === 'left' ? "content-left" : "content-right";
 
     const renderButton = () => {
-        if(!link || !buttonText) return null;
+        if(!data.link || !data.buttonText) return null;
         return (
-            <Link to={link} className="button-slide">{buttonText}</Link>
+            <Link to={data.link} className="button-slide">{data.buttonText}</Link>
         )
     }
 
     const renderContent = () => {
-        if(!text || !title) return null;
+        if(!data.text || !data.title) return null;
         return (
             <div className={`${contentClass} content`}>
-                <h2>{title}</h2>
-                <p>{text}</p>
+                <h2>{data.title}</h2>
+                <p>{data.text}</p>
                 {renderButton()}
             </div>
         )
     }
 
     const renderImage = () => {
-        if(!image) return null;
+        if(!data.imageUrl) return null;
         return (
-            <div className={`${imageClass} image`} style={{ backgroundImage: `url(${image})`}}>
+            <div className={`${imageClass} image`} style={{ backgroundImage: `url(${data.imageUrl})`}}>
             </div>
         )
     }

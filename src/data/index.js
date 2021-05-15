@@ -58,8 +58,11 @@ export const SOCIAL_LINKS = [
     }
 ];
 
-export const IMAGE1_URL = `${process.env.PUBLIC_URL}/images/code.png`;
-
-export const TITLE1 = "Check out my projects!";
-
-export const TEXT1 = "Check out my list of project that are currently awailable online!"
+export const SEGMENT1 = {
+    imageUrl: `${process.env.PUBLIC_URL}/images/code.png`,
+    title: "Check out my projects!",
+    text: "Check out my list of project that are currently awailable online!",
+    link: "/projects",
+    imagePosition: "left",
+    buttonText: "Check out the list"
+}
