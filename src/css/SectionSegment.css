@@ -1,16 +1,18 @@
 .section-segment {
 	width: 100%;
-	padding: 10px;
+	clear: both;
+	padding: 20px 40px;
 }
 
 .image {
+	border: 5px solid var(--navbarFooterBackground);
 	background-size: 100% 100%;
 	background-position: 30% center;
 	background-repeat: no-repeat;
 	border-radius: 50%;
-	width: 70%;
-	padding-top: 70%;
-	margin: 0 auto;
+	width: 75%;
+	padding-top: 75%;
+	margin: auto;
 }
 
 .content {
@@ -42,12 +44,16 @@
 
 @media (min-width: 620px) {
 	.image {
-		width: 35%;
-		padding-top: 35%;
+		width: 50%;
+		padding-top: 50%;
 	}
 }
 
 @media (min-width: 992px) {
+	.section-segment {
+		padding: 20px 10px;
+	}
+
 	.image {
 		margin: 20px 130px;
 		width: 30%;

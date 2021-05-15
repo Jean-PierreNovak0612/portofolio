@@ -60,8 +60,8 @@ export const SOCIAL_LINKS = [
 
 export const SEGMENT1 = {
     imageUrl: `${process.env.PUBLIC_URL}/images/code.png`,
-    title: "Check out my projects!",
-    text: "Check out my list of project that are currently awailable online!",
+    title: "Check out my project list!",
+    text: "On this site I included a small project list that contains some descriptions and links to the projects",
     link: "/projects",
     imagePosition: "left",
     buttonText: "Check out the list"
@@ -70,7 +70,7 @@ export const SEGMENT1 = {
 export const SEGMENT2 = {
     imageUrl: `${process.env.PUBLIC_URL}/images/me.png`,
     title: "But who am I?",
-    text: "I am a self-taught web developer. My journey started in 2018 and is still ongoing...",
+    text: "I am a 20 years old self-taught web developer. My journey started in 2018 and is still ongoing...",
     link: "/projects",
     imagePosition: "right",
     buttonText: "Read more!"
