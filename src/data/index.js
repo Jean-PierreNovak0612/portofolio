@@ -73,5 +73,35 @@ export const SEGMENT2 = {
     text: "I am a 20 years old self-taught web developer. My journey started in 2018 and is still ongoing...",
     link: "/projects",
     imagePosition: "right",
-    buttonText: "Read more!"
+    buttonText: "Read more"
 }
+
+export const FORM_FIELDS = [
+    {
+        type: 'input',
+        inputType: 'text',
+        label: 'Subject',
+        placeholder: 'Contact',
+        id: 'input-subject'
+    },
+    {
+        type: 'input',
+        inputType: 'text',
+        label: 'Full Name',
+        placeholder: 'John Doe',
+        id: 'input-name'
+    },
+    {
+        type: 'input',
+        inputType: 'email',
+        label: 'Email',
+        placeholder: 'johndoe@gmail.com',
+        id: 'input-email'
+    },
+    {
+        type: 'textarea',
+        label: 'Message',
+        placeholder: 'Hi there!',
+        id: 'input-message'
+    }
+]

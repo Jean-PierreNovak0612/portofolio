@@ -5,7 +5,7 @@
 }
 
 .image {
-	border: 5px solid var(--navbarFooterBackground);
+	border: 5px solid var(--mainBackground);
 	background-size: 110% 110%;
 	background-position: 30% center;
 	background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 }
 
 .button {
-	background-color: var(--navbarFooterBackground);
+	background-color: var(--mainBackground);
 	color: #fff;
 	border-radius: 10px;
 	text-decoration: none;
@@ -39,7 +39,7 @@
 	text-transform: uppercase;
 	transition: all 300ms ease-in-out;
 	font-weight: bolder;
-	border: 2px solid var(--navbarFooterBackground);
+	border: 2px solid var(--mainBackground);
 }
 
 @media (min-width: 620px) {
@@ -76,7 +76,7 @@
 	}
 
 	.button-slide:hover {
-		color: var(--navbarFooterBackground);
+		color: var(--mainBackground);
 		box-shadow: inset 15em 0 0 0 #bbb;
 	}
 }

@@ -22,8 +22,8 @@
 }
 
 :root {
-	--navbarFooterBackground: rgb(66, 58, 87);
-	--scrollbarBackground: rgba(66, 58, 87, 0.76);
+	--mainBackground: #423a57;
+	--scrollbarBackground: #423a57c2;
 }
 
 body {

@@ -1,0 +1,105 @@
+.contact-form {
+	clear: both;
+	padding: 20px;
+	text-align: center;
+}
+
+.main-page {
+	background-color: var(--scrollbarBackground);
+	color: #fff;
+}
+
+form {
+	text-align: left;
+	max-width: 90%;
+	width: 800px;
+	margin: 20px auto;
+}
+
+label {
+	font-weight: bold;
+	font-size: 1.3em;
+	display: block;
+	margin: 15px 0 3px;
+}
+
+form input,
+form textarea {
+	font-weight: 700;
+	width: 100%;
+	padding: 0.5em;
+	font-size: 1.2em;
+	border-radius: 10px;
+}
+
+form textarea {
+	resize: vertical;
+	min-height: 200px;
+	max-height: 500px;
+}
+
+form button {
+	width: 100%;
+	background-color: var(--mainBackground);
+	color: #fff;
+	font-size: 1.1em;
+	border-radius: 10px;
+	padding: 0.7em 1.2em;
+	text-transform: uppercase;
+	transition: all 500ms ease-in-out;
+	font-weight: bolder;
+	border: 2px solid var(--mainBackground);
+}
+
+form div {
+	display: none;
+}
+
+form div.error {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	font-size: 1.2em;
+	padding: 0.5em;
+	margin: 10px 0;
+	border: 3px solid red;
+	color: red;
+	border-radius: 10px;
+	background-color: rgb(255, 157, 157);
+}
+
+form input.error,
+form textarea.error {
+	border: 3px solid red;
+}
+
+form input.error::placeholder,
+form textarea.error::placeholder {
+	color: red;
+}
+
+form div.success {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	font-size: 1.2em;
+	padding: 0.5em;
+	margin: 10px 0;
+	border: 3px solid green;
+	color: green;
+	border-radius: 10px;
+	background-color: rgb(169, 255, 169);
+}
+
+@media (min-width: 992px) {
+	form button {
+		width: auto;
+	}
+
+	.button-submit:hover {
+		color: var(--mainBackground);
+		box-shadow: inset 15em 0 0 0 #bbb;
+	}
+}

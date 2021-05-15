@@ -1,5 +1,5 @@
 header {
-	background-color: var(--navbarFooterBackground);
+	background-color: var(--mainBackground);
 	text-align: center;
 	top: 0;
 	position: fixed;
@@ -17,7 +17,7 @@ nav {
 	text-align: left;
 	top: 100%;
 	left: 0;
-	background-color: var(--navbarFooterBackground);
+	background-color: var(--mainBackground);
 	width: 100%;
 	max-height: 330px;
 	overflow-y: auto;
@@ -361,7 +361,7 @@ input[type='checkbox'] {
 		position: absolute;
 		top: 100%;
 		border-top: 5px solid #fff;
-		background-color: var(--navbarFooterBackground);
+		background-color: var(--mainBackground);
 		opacity: 0;
 		visibility: hidden;
 		transition: top 0.3s ease-in-out, opacity 600ms ease-in-out;
