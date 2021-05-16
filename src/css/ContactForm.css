@@ -10,10 +10,18 @@
 }
 
 form {
+	color: #fff;
+	padding: 10px 1.5em;
+	background-color: var(--scrollbarBackground);
+	border-radius: 10px;
 	text-align: left;
 	max-width: 90%;
-	width: 800px;
+	width: 992px;
 	margin: 20px auto;
+}
+
+.main-page form {
+	background-color: transparent !important;
 }
 
 form label {
@@ -33,6 +41,7 @@ form textarea {
 }
 
 form textarea {
+	font-family: arial, sans-serif;
 	resize: vertical;
 	min-height: 200px;
 	max-height: 500px;
