@@ -87,7 +87,7 @@ export const LIST_ITEMS = [
             imageUrl: `${process.env.PUBLIC_URL}/images/react_yt_app.png`,
             title: "A small app that implements the YouTube v3 API",
             text: "This small aplication was build during my learning phase. The goal was to implement the YouTube v3 API to allow the user to search for videos, without the user going to YouTube directly.",
-            link: "/projects",
+            link: "https://jean-pierrenovak0612.github.io/react-yt-api/",
             imagePosition: "left",
             buttonText: "Check out the app!"
         }
@@ -100,9 +100,9 @@ export const LIST_ITEMS = [
         id: "two",
         data: {
             imageUrl: `${process.env.PUBLIC_URL}/images/landig_page.png`,
-            title: "But who am I?",
-            text: "I am a 20 years old self-taught web developer. My journey started in 2018 and is still ongoing...",
-            link: "/projects",
+            title: "A landing page for a small organisation in Croatia",
+            text: "After that I created a small landing page, wich should represent a small organisation that helps animals in Croatia. It also has a small contact form at the bottom of the page, which is linked to me.",
+            link: "https://jean-pierrenovak0612.github.io/landing-page/",
             imagePosition: "left",
             buttonText: "Check out the app!"
         }
@@ -115,9 +115,9 @@ export const LIST_ITEMS = [
         id: "three",
         data: {
             imageUrl: `${process.env.PUBLIC_URL}/images/ecomerce_site.png`,
-            title: "But who am I?",
-            text: "I am a 20 years old self-taught web developer. My journey started in 2018 and is still ongoing...",
-            link: "/projects",
+            title: "A small E-comerce website that uses the JSON RESTFULL API server",
+            text: "This site was created with the intetion to prove that I know how to connect a database with a webpage. However, because of the limitations of the JSON server, the amount of products in the store can't be changed. But even though that is the case, a FAKE PATCH is being made towards the server, which is visible in the developer console (Functional button F12).",
+            link: "https://jean-pierrenovak0612.github.io/ecomerce-site/#/ecomerce-site/ecomerce-site/",
             imagePosition: "left",
             buttonText: "Check out the app!"
         }

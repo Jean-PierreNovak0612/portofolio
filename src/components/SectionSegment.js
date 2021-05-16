@@ -10,6 +10,12 @@ const SectionSegment = ({ data }) => {
 
     const renderButton = () => {
         if(!data.link || !data.buttonText) return null;
+        console.log(data.link.substring(0, 5));
+        if(data.link.substring(0, 4) === "http"){
+            return (
+                <a href={data.link} target="_blank" className="button-slide button">{data.buttonText}</a>
+            )
+        }
         return (
             <Link to={data.link} className="button-slide button">{data.buttonText}</Link>
         )
