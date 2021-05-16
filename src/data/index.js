@@ -76,32 +76,50 @@ export const SEGMENT2 = {
     buttonText: "Read more"
 }
 
-export const FORM_FIELDS = [
+export const LIST_ITEMS = [
     {
-        type: 'input',
-        inputType: 'text',
-        label: 'Subject',
-        placeholder: 'Contact',
-        id: 'input-subject'
+        title: "Youtube search app",
+        active: true,
+        text: "",
+        className: "yt-app",
+        id: "one",
+        data: {
+            imageUrl: `${process.env.PUBLIC_URL}/images/react_yt_app.png`,
+            title: "A small app that implements the YouTube v3 API",
+            text: "This small aplication was build during my learning phase. The goal was to implement the YouTube v3 API to allow the user to search for videos, without the user going to YouTube directly.",
+            link: "/projects",
+            imagePosition: "left",
+            buttonText: "Check out the app!"
+        }
     },
     {
-        type: 'input',
-        inputType: 'text',
-        label: 'Full Name',
-        placeholder: 'John Doe',
-        id: 'input-name'
+        title: "Landing page",
+        active: false,
+        text: "",
+        className: "landing",
+        id: "two",
+        data: {
+            imageUrl: `${process.env.PUBLIC_URL}/images/landig_page.png`,
+            title: "But who am I?",
+            text: "I am a 20 years old self-taught web developer. My journey started in 2018 and is still ongoing...",
+            link: "/projects",
+            imagePosition: "left",
+            buttonText: "Check out the app!"
+        }
     },
     {
-        type: 'input',
-        inputType: 'email',
-        label: 'Email',
-        placeholder: 'johndoe@gmail.com',
-        id: 'input-email'
-    },
-    {
-        type: 'textarea',
-        label: 'Message',
-        placeholder: 'Hi there!',
-        id: 'input-message'
+        title: "Ecomerce site",
+        active: false,
+        text: "",
+        className: "ecomerce",
+        id: "three",
+        data: {
+            imageUrl: `${process.env.PUBLIC_URL}/images/ecomerce_site.png`,
+            title: "But who am I?",
+            text: "I am a 20 years old self-taught web developer. My journey started in 2018 and is still ongoing...",
+            link: "/projects",
+            imagePosition: "left",
+            buttonText: "Check out the app!"
+        }
     }
 ]

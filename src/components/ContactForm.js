@@ -25,6 +25,17 @@ const ContactForm = ({ from }) => {
         }, (error) => {
             console.log(error.text)
         });
+
+        setSubject('')
+        setMessage('');
+        setName('');
+        setEmail('');
+
+        setSuccessMessage('success')
+
+        setTimeout(() => {
+            setSuccessMessage('');
+        }, 1500)  
     }
 
     const validate = (e) => {
@@ -40,18 +51,7 @@ const ContactForm = ({ from }) => {
         else setMessageError('');
         if(email === '' || name === '' || message === '' || subject === '') return null;
 
-        sendEmail(e.target)
-
-        setSubject('')
-        setMessage('');
-        setName('');
-        setEmail('');
-
-        setSuccessMessage('success')
-
-        setTimeout(() => {
-            setSuccessMessage('');
-        }, 1500)    
+        sendEmail(e.target)  
     }
 
     return (
