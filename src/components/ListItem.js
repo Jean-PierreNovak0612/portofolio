@@ -11,7 +11,7 @@ const ListItem = ({ item }) => {
     return (
         <div className="list-item">
             <input type="checkbox" id={item.id} checked={active} onChange={() => {return}} />
-            <label htmlFor={item.id} onClick={() => setActive(!active)}><h1>{item.title}&nbsp;&nbsp; <span className="arrow"></span></h1></label>
+            <label htmlFor={item.id} onClick={() => setActive(!active)}><h1>{item.title}</h1><span className="arrow"></span></label>
             <div className={item.className}>
                 <SectionSegment data={item.data} />
             </div>
