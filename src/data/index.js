@@ -13,15 +13,15 @@ export const NAV_LINKS = [
         sublinks: [
             {
                 title: "YouTube search app",
-                location: "/project/youtube-api"
+                location: "https://jean-pierrenovak0612.github.io/react-yt-api/"
             },
             {
                 title: "Landing page",
-                location: "/project/landing-page"
+                location: "https://jean-pierrenovak0612.github.io/landing-page/"
             },
             {
                 title: "E-comerce page",
-                location: "/projects/ecomerce-page"
+                location: "https://jean-pierrenovak0612.github.io/ecomerce-site/#/ecomerce-site/ecomerce-site/"
             }
         ],
         position: "second"
