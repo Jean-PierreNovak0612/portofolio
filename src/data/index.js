@@ -89,7 +89,7 @@ export const LIST_ITEMS = [
             text: "This small aplication was build during my learning phase. The goal was to implement the YouTube v3 API to allow the user to search for videos, without the user going to YouTube directly.",
             link: "https://jean-pierrenovak0612.github.io/react-yt-api/",
             imagePosition: "left",
-            buttonText: "Check out the app!"
+            buttonText: "Check out the page!"
         }
     },
     {
@@ -104,7 +104,7 @@ export const LIST_ITEMS = [
             text: "After that I created a small landing page, wich should represent a small organisation that helps animals in Croatia. It also has a small contact form at the bottom of the page, which is linked to me.",
             link: "https://jean-pierrenovak0612.github.io/landing-page/",
             imagePosition: "left",
-            buttonText: "Check out the app!"
+            buttonText: "Check out the page!"
         }
     },
     {
@@ -119,7 +119,7 @@ export const LIST_ITEMS = [
             text: "This site was created with the intetion to prove that I know how to connect a database with a webpage. However, because of the limitations of the JSON server, the amount of products in the store can't be changed. But even though that is the case, a FAKE PATCH is being made towards the server, which is visible in the developer console (Functional button F12).",
             link: "https://jean-pierrenovak0612.github.io/ecomerce-site/#/ecomerce-site/ecomerce-site/",
             imagePosition: "left",
-            buttonText: "Check out the app!"
+            buttonText: "Check out the page!"
         }
     }
 ]
