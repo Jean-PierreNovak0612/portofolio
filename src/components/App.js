@@ -16,7 +16,7 @@ const App = () => {
                 <Header links={NAV_LINKS} />
                 <Switch>
                     <Route path="/" exact component={HomePage} />
-                    <Route path="/contact" exact component={ContactPage} />
+                    {/* <Route path="/contact" exact component={ContactPage} /> */}
                     <Route path="/projects" exact component={ProjectList} />
                 </Switch>
             </Router>
