@@ -4,6 +4,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import HomePage from './HomePage';
 import ContactPage from './ContactPage';
+import ProjectList from './ProjectList';
 import { NAV_LINKS } from '../data';
 
 import '../css/style.css';
@@ -16,6 +17,7 @@ const App = () => {
                 <Switch>
                     <Route path="/" exact component={HomePage} />
                     <Route path="/contact" exact component={ContactPage} />
+                    <Route path="/projects" exact component={ProjectList} />
                 </Switch>
             </Router>
         </div>
