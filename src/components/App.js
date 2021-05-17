@@ -5,7 +5,8 @@ import Header from './Header';
 import HomePage from './HomePage';
 import ContactPage from './ContactPage';
 import ProjectList from './ProjectList';
-import { NAV_LINKS, LIST_ITEMS } from '../data';
+import AboutPage from './AboutPage';
+import { NAV_LINKS, LIST_ITEMS, ARTICLE_LIST } from '../data';
 
 import '../css/style.css';
 
@@ -18,6 +19,7 @@ const App = () => {
                     <Route path="/" exact component={HomePage} />
                     <Route path="/contact" exact component={ContactPage} />
                     <Route path="/projects" exact component={() => <ProjectList listItems={LIST_ITEMS} />} />
+                    <Route path="/about" exact component={() => <AboutPage contents={ARTICLE_LIST} />} />
                 </Switch>
             </Router>
         </div>

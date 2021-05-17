@@ -8,7 +8,7 @@ const Header = ({ links = [] }) => {
     const renderSublinks = (sublinks) => {
         
         return sublinks.map(sublink => {
-            if(sublink.location.substring(0, 4) === "http") return <li key={sublink.title}><a className="nav-link" target="_blank" href={sublink.location}>{sublink.title}</a></li>
+            if(sublink.location.substring(0, 4) === "http") return <li key={sublink.title}><a className="nav-link" target="_blank" rel="noreferrer" href={sublink.location}>{sublink.title}</a></li>
             return <li key={sublink.title}><Link className="nav-link" to={sublink.location}>{sublink.title}</Link></li>
         })
     }

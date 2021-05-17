@@ -16,7 +16,6 @@
 .landing,
 .ecomerce {
 	display: none;
-	transition: all 500ms ease-in-out;
 }
 
 .arrow,

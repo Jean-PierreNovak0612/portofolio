@@ -71,7 +71,7 @@ export const SEGMENT2 = {
     imageUrl: `${process.env.PUBLIC_URL}/images/me.png`,
     title: "But who am I?",
     text: "I am a 20 years old self-taught web developer. My journey started in 2018 and is still ongoing...",
-    link: "/projects",
+    link: "/about",
     imagePosition: "right",
     buttonText: "Read more"
 }
@@ -120,6 +120,39 @@ export const LIST_ITEMS = [
             link: "https://jean-pierrenovak0612.github.io/ecomerce-site/#/ecomerce-site/ecomerce-site/",
             imagePosition: "left",
             buttonText: "Check out the page!"
+        }
+    }
+];
+
+export const ARTICLE_LIST = [
+    {
+        ref: "me",
+        title: "Who am I?",
+        content: {
+            title: " ",
+            text: "My name is Jean-Pierre and I am a 20 years old self-taught web developer. I am a very imaginative person and love to design and develop web pages and applications, which gives me the opportunity to share my ideas. I see web development as a way to share and combine ideas, which in many cases produces breathtaking results. ",
+            imageUrl: `${process.env.PUBLIC_URL}/images/me.png`,
+            imagePosition: "left",
+        }
+    },
+    {
+        ref: "school",
+        title: "Education",
+        content: {
+            title: " ",
+            text: "in 2016. I enroled in the Ruđer Bošković Tehnical School in order to become a game developer. It was a rough ride and wasn't easy at all, especially since I didn't have any programming background at all (Till then I didn't even own a computer). I had to learn everything my colleagues already knew, as well as the new stuff that we were learning in school. To be exact, it was really tough on me. However, now looking back on it all, if I had the chance, I would repeat it all over again.",
+            imageUrl: `${process.env.PUBLIC_URL}/images/rudjer.png`,
+            imagePosition: "right",
+        }
+    },
+    {
+        ref: "webdev",
+        title: "How it came to be",
+        content: {
+            title: " ",
+            text: "My journey to become a web developer started in 2018. As mentioned, I enroled the Ruđer Bošković Tehnical School in order to become a game developer. And it stayed that way untill we were introduced to web developent in our 3rd year of highschool. At first, learning about HTML was really boring. I didn't like it at all. later on we were introduced to CSS, which made it kind of interesting. But even so, it wasn't enough. Just after learning about JavaScript was I persuaded and started learning more about web development. After that came jQuery, PHP, React and Typescript, which opened the door to putting everything I could think of onto the web. And that is how it all started.",
+            imageUrl: `${process.env.PUBLIC_URL}/images/code.png`,
+            imagePosition: "left",
         }
     }
 ]
