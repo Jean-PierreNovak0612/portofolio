@@ -1,0 +1,22 @@
+/* Reseting the paddings and margins, as well as seting the box sizing */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Defining the colors */
+
+:root {
+    --dark: #1d1c19;
+    --light: #f7f9fd;
+    --green: #748579;
+}
+
+/* Setting the background color of the entire page to off-whte */
+
+body, html {
+    background-color: var(--light);
+}
+

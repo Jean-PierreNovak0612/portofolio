@@ -1,0 +1,101 @@
+/* Styling the image logo */
+
+.logo {
+	height: 80px;
+	max-width: 300px;
+}
+
+/* Styling the menu button */
+
+.ham-menu-container {
+	position: relative;
+	display: flex;
+	height: 80px;
+	width: 80px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	justify-content: center;
+	align-items: center;
+}
+
+.ham-menu {
+	width: 50px;
+	height: 6px;
+	background-color: var(--dark);
+	transition: all 0.5s ease-in-out;
+	border-radius: 5px;
+}
+
+.ham-menu::before,
+.ham-menu::after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 6px;
+	background-color: var(--dark);
+	transition: all 0.5s ease-in-out;
+	border-radius: 5px;
+}
+
+.ham-menu::before {
+	transform: translateY(-16px);
+}
+
+.ham-menu::after {
+	transform: translateY(16px);
+}
+
+.ham-menu.active,
+.ham-menu.active::before,
+.ham-menu.active::after {
+	background-color: var(--light);
+}
+
+/* Styling the menu button animation */
+
+.ham-menu-container.open .ham-menu {
+	transform: translateX(-50px);
+	background: transparent;
+}
+
+.ham-menu-container.open .ham-menu::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+
+.ham-menu-container.open .ham-menu::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Styling the header element */
+
+.navigation {
+	position: fixed;
+	display: flex;
+	top: 0;
+	justify-content: space-between;
+	height: 80px;
+	width: 100%;
+	background-color: var(--light);
+	color: var(--dark);
+}
+
+.navigation.active {
+	background-color: var(--dark);
+	color: var(--light);
+}
+
+/* Styling the navbar */
+
+.navbar {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	background-color: var(--light);
+	color: var(--dark);
+	display: none;
+}
+
+.navbar.scrolled {
+	background-color: var(--dark);
+	color: var(--light);
+}
