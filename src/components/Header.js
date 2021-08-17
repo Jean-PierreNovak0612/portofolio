@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 
 import '../css/Header.css';
 
+import NavbarLink from './NavbarLink';
+import NavbarSublink from './NavbarSublink'
+import { NAV_LINKS as links } from '../data'
+
 // The Header component that will contain the navigation
 
 const Header = () => {
@@ -35,6 +39,15 @@ const Header = () => {
         setToggle(!toggle)
     }
 
+    // Function that generates the links on the navbar
+
+    const GenerateLinks = () => {
+        return links.map(link => {
+            if(link.sublinks) return <NavbarSublink link={link} />
+            return <NavbarLink key={link.title  } link={link} />
+        })
+    }
+
     // Listening for the scroll event to change the background color of the navigation
 
     window.addEventListener('scroll', ChangeBackgroundColor);
@@ -48,7 +61,9 @@ const Header = () => {
                 <div className={navigation ? 'ham-menu active' : 'ham-menu'}></div>
             </div>
             <nav className={navigation ? 'navbar scrolled' : 'navbar'}>
-                Hello there
+                <ul>
+                    {GenerateLinks()}
+                </ul>
             </nav>
         </header>
     );

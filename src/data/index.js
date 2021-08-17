@@ -1,33 +1,35 @@
 export const NAV_LINKS = [
     {
-        title: "home",
+        title: "Home",
         location: "/"
     },
     {
-        title: "about me",
+        title: "About me",
         location: "/about"
     },
     {
-        title: "procjects",
-        location: "/projects",
+        title: "Procjects",
         sublinks: [
             {
                 title: "YouTube search app",
-                location: "https://jean-pierrenovak0612.github.io/react-yt-api/"
+                location: "/projects/react-yt-api/"
             },
             {
                 title: "Landing page",
-                location: "https://jean-pierrenovak0612.github.io/landing-page/"
+                location: "/projects/landing-page/"
             },
             {
                 title: "E-comerce page",
-                location: "https://jean-pierrenovak0612.github.io/ecomerce-site/#/ecomerce-site/ecomerce-site/"
+                location: "/projects/ecomerce-site/"
+            },
+            {
+                title: "Corona data page",
+                location: '/projects/corona-data'
             }
         ],
-        position: "second"
     },
     {
-        title: "contact me",
+        title: "Contact me",
         location: "/contact"
     }
 ];

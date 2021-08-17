@@ -84,15 +84,25 @@
 	color: var(--light);
 }
 
-/* Styling the navbar */
+/* Styling the navbar when menu closed */
 
 .navbar {
 	position: absolute;
 	width: 100%;
 	top: 100%;
+	padding: 10px;
+	height: 200px;
 	background-color: var(--light);
 	color: var(--dark);
-	display: none;
+	transform: scale(1, 0);
+	transform-origin: top;
+	transition: transform 500ms ease-in-out;
+}
+
+/* Styling the navbar  */
+
+.ham-menu-container.open + .navbar {
+	transform: scale(1, 1);
 }
 
 .navbar.scrolled {
