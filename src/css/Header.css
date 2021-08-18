@@ -3,6 +3,7 @@
 .logo {
 	height: 80px;
 	max-width: 300px;
+	user-select: none;
 }
 
 /* Styling the menu button */
@@ -98,7 +99,7 @@
 	color: var(--dark);
 	transform: scale(1, 0);
 	transform-origin: top;
-	transition: transform 500ms ease-in-out;
+	transition: transform 300ms ease-in-out;
 }
 
 /* Styling the navbar  */
@@ -122,5 +123,5 @@
 
 .link-list.active {
 	opacity: 1;
-	transition: opacity 250ms ease-in-out 350ms;
+	transition: opacity 250ms ease-in-out 200ms;
 }
