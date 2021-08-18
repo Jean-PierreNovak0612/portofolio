@@ -43,8 +43,8 @@ const Header = () => {
 
     const GenerateLinks = () => {
         return links.map(link => {
-            if(link.sublinks) return <NavbarSublink link={link} />
-            return <NavbarLink key={link.title  } link={link} />
+            if(link.sublinks) return <NavbarSublink key={link.title} closeNav={setToggle} link={link} navigation={navigation} />
+            return <NavbarLink key={link.title} closeNav={setToggle} link={link} navigation={navigation} />
         })
     }
 
@@ -55,13 +55,13 @@ const Header = () => {
     return (
         <header className={navigation ? 'navigation active' : 'navigation'}>
             <Link to="/">
-                <img className="logo" src={displayLogo()} />
+                <img className="logo" onClick={() => setToggle(false)} src={displayLogo()} />
             </Link>
             <div className={toggle ? 'ham-menu-container open' : 'ham-menu-container'} onClick={onHamburgerClick}>
                 <div className={navigation ? 'ham-menu active' : 'ham-menu'}></div>
             </div>
             <nav className={navigation ? 'navbar scrolled' : 'navbar'}>
-                <ul>
+                <ul className={toggle ? 'link-list active' : 'link-list'}>
                     {GenerateLinks()}
                 </ul>
             </nav>

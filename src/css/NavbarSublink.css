@@ -1,0 +1,34 @@
+/* Styling the sublink label. */
+
+.navbar-label {
+	font-family: Geneva, Geneva, Geneva;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	padding: 7px 10px;
+}
+
+/* Styling the dropdown icon. */
+
+.dropdown-icon {
+	display: inline-block;
+	font-weight: bolder;
+	transition: all 0.2s ease-in-out;
+}
+
+.dropdown-icon.active {
+	transform: rotateZ(45deg);
+}
+
+/* Styling the sublink list. */
+
+.navbar-sublink-container {
+	padding: 0 30px;
+	list-style: none;
+	display: none;
+}
+
+.navbar-sublink-container.active {
+	display: block;
+}

@@ -1,0 +1,17 @@
+/* Styling the links */
+
+.navbar-link {
+	font-family: Geneva, Geneva, Geneva;
+	font-size: 18px;
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	color: var(--dark);
+	font-weight: bold;
+	padding: 7px 10px;
+}
+
+.navbar-link.active {
+	color: var(--light);
+	border-bottom-color: var(--light);
+}
