@@ -13,5 +13,42 @@
 
 .navbar-link.active {
 	color: var(--light);
-	border-bottom-color: var(--light);
+}
+
+/* Adding styles for larger displays */
+
+@media (min-width: 1000px) {
+	/* Adding some padding to the links */
+
+	.navbar-link-container {
+		margin-bottom: 5px;
+	}
+
+	/* Adding underline on hover over the links */
+
+	.navbar-link {
+		position: relative;
+	}
+
+	.navbar-link::before,
+	.navbar-link.active::before {
+		content: '';
+		display: block;
+		height: 3px;
+		background: var(--dark);
+		position: absolute;
+		bottom: -0.2em;
+		left: 0;
+		right: 0;
+		transform: scale(0, 1);
+		transition: transform 250ms ease-in-out;
+	}
+
+	.navbar-link.active::before {
+		background: var(--light);
+	}
+
+	.navbar-link:hover::before {
+		transform: scale(1, 1);
+	}
 }

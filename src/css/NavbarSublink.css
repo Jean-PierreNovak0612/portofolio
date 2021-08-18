@@ -33,3 +33,70 @@
 .navbar-sublink-container.active {
 	display: block;
 }
+
+/* Styling the sublinks for larger displays */
+
+@media (min-width: 1000px) {
+	/* Changing the sublink list depending on how far the user has scrolled */
+
+	.navbar-sublink-container {
+		background-color: var(--light);
+		color: var(--dark);
+		display: block;
+		transform: scale(1, 0);
+		transform-origin: top;
+		position: absolute;
+		top: 100%;
+		border-top: 1px solid rgb(223, 223, 223);
+		transition: transform 250ms ease-in-out;
+	}
+
+	.navbar-sublink-container.active {
+		transform: scale(1, 1);
+	}
+
+	.navbar-sublink-container.scrolled {
+		background-color: var(--dark);
+		color: var(--light);
+	}
+
+	/* Styling the sublinks */
+
+	.navbar-link-container.sublink {
+		opacity: 0;
+		transition: opacity 100ms ease-in-out;
+	}
+
+	.navbar-sublink-container.active > .navbar-link-container.sublink {
+		opacity: 1;
+		transition: opacity 250ms ease-in-out 200ms;
+	}
+
+	/* Adding the underline on hover to the label */
+
+	.navbar-label {
+		position: relative;
+	}
+
+	.navbar-label::before,
+	.navbar-label.active::before {
+		content: '';
+		display: block;
+		height: 3px;
+		background: var(--dark);
+		position: absolute;
+		bottom: -0.2em;
+		left: 0;
+		right: 0;
+		transform: scale(0, 1);
+		transition: transform 250ms ease-in-out;
+	}
+
+	.navbar-label.active::before {
+		background: var(--light);
+	}
+
+	.navbar-label:hover::before {
+		transform: scale(1, 1);
+	}
+}

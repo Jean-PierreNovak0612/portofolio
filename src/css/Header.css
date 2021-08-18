@@ -125,3 +125,32 @@
 	opacity: 1;
 	transition: opacity 250ms ease-in-out 200ms;
 }
+
+/* Stylings for bigger dispalys */
+
+@media (min-width: 1000px) {
+	/* Hiding the hamburger menu */
+
+	.ham-menu-container {
+		display: none;
+	}
+
+	/* Displaying the navbar */
+
+	.navbar {
+		display: flex;
+		transform: scale(1, 1);
+		position: relative;
+		top: 0;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	/* Displaying the link list in the navbar */
+
+	.link-list {
+		opacity: 1;
+		display: flex;
+	}
+}
