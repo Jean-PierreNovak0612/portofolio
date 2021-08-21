@@ -1,10 +1,9 @@
 /* Styling the sublink label. */
 
 .navbar-label {
-	font-family: Geneva, Geneva, Geneva;
+	font-family: 'Patua One', cursive;
 	display: inline-block;
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 20px;
 	width: 100%;
 	padding: 7px 10px;
 	user-select: none;

@@ -9,6 +9,7 @@
 /* Styling the menu button */
 
 .ham-menu-container {
+	user-select: none;
 	position: relative;
 	display: flex;
 	height: 80px;
@@ -92,6 +93,7 @@
 /* Styling the navbar when menu closed */
 
 .navbar {
+	user-select: none;
 	position: absolute;
 	width: 100%;
 	top: 100%;

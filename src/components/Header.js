@@ -11,25 +11,29 @@ import { NAV_LINKS as links } from '../data'
 
 const Header = () => {
     const [navigation, setNavigation] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth <= 400);
     const [toggle, setToggle] = useState(false);
 
     // Functon that changes the state of the navigation variable depending on how far the user has scrolled
 
     const ChangeBackgroundColor = () => {
-        if(window.scrollY >= 80){
-            setNavigation(true);
-        }
-        else {
-            setNavigation(false);
-        }
+        if(window.scrollY >= 80) setNavigation(true);
+        else setNavigation(false);
+    }
+
+    // Function that sets the width variable to true if the screen width is smaller than 400px
+
+    const ChangeSize = () => {
+        if(window.innerWidth <= 400) setWidth(true);
+        else setWidth(false);
     }
 
     // Function that changes the logo image depending on how far the user has scrolled
 
     const displayLogo = () => {
-        if (navigation) {
-            return process.env.PUBLIC_URL + '/images/logo_dark.png';
-        }
+        if (navigation && width) return process.env.PUBLIC_URL + '/images/favicon.png';
+        else if (navigation) return process.env.PUBLIC_URL + '/images/logo_dark.png';
+        else if (width) return process.env.PUBLIC_URL + '/images/light_favicon.png';
         return process.env.PUBLIC_URL + '/images/logo_light.png';
     }
 
@@ -51,6 +55,7 @@ const Header = () => {
     // Listening for the scroll event to change the background color of the navigation
 
     window.addEventListener('scroll', ChangeBackgroundColor);
+    window.addEventListener('resize', ChangeSize)
 
     return (
         <header className={navigation ? 'navigation active' : 'navigation'}>
