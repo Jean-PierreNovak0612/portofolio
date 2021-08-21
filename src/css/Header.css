@@ -101,6 +101,8 @@
 	color: var(--dark);
 	transform: scale(1, 0);
 	transform-origin: top;
+	max-height: 300px;
+	overflow-x: auto;
 	transition: transform 300ms ease-in-out;
 }
 
@@ -144,6 +146,8 @@
 		transform: scale(1, 1);
 		position: relative;
 		top: 0;
+		height: 80px;
+		overflow-x: initial;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;

@@ -10,10 +10,20 @@ const NavbarSublink = ({ link, closeNav, navigation }) => {
 
     const [toggleDropdown, setToggleDropdown] = useState(false)
 
+    // Function that changes the language of the
+
+    const ChangeLanguage = (lang) => {
+        localStorage.setItem('language', lang);
+        window.location.reload();
+    }
+
     // Function that generates the sublinks for navigation links
     
     const GenerateLinks = () => {
         return link.sublinks.map(sublink => {
+            if(!sublink.location){
+                return <li key={sublink.title} className={navigation ? 'navbar-link active navbar-sublink' : 'navbar-link navbar-sublink'} onClick={() => ChangeLanguage(sublink.value)}>{sublink.title}</li>
+            }
             return <NavbarLink className="navbar-sublink" key={sublink.title} closeNav={closeNav} link={sublink} navigation={navigation} addedClass="sublink" />;
         })
     }

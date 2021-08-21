@@ -31,6 +31,20 @@ export const NAV_LINKS = [
     {
         title: "Contact me",
         location: "/contact"
+    },
+    {
+        title: "Language",
+        sublinks: [
+            {
+                title: "English",
+            },
+            {
+                title: "Deutsch",
+            },
+            {
+                title: "Hrvatski"
+            }
+        ]
     }
 ];
 

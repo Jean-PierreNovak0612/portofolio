@@ -5,14 +5,26 @@ import '../css/Header.css';
 
 import NavbarLink from './NavbarLink';
 import NavbarSublink from './NavbarSublink'
-import { NAV_LINKS as links } from '../data'
-
+import { NAV_LINKS as links_en } from '../data';
+import { NAV_LINKS_HR as links_hr } from '../data/data_hr';
+import { NAV_LINKS_DE as links_de} from '../data/data_de';
+ 
 // The Header component that will contain the navigation
 
 const Header = () => {
     const [navigation, setNavigation] = useState(false);
     const [width, setWidth] = useState(window.innerWidth <= 400);
     const [toggle, setToggle] = useState(false);
+    
+    // Function that changes the language variable
+
+    const SelectLanguage = () => {
+        if(localStorage.getItem('language') === 'en' || localStorage.getItem('language') === null) return links_en;
+        if(localStorage.getItem('language') === 'de') return links_de;
+        return links_hr;
+    }
+
+    const links = SelectLanguage();
 
     // Functon that changes the state of the navigation variable depending on how far the user has scrolled
 
@@ -20,6 +32,8 @@ const Header = () => {
         if(window.scrollY >= 80) setNavigation(true);
         else setNavigation(false);
     }
+
+    
 
     // Function that sets the width variable to true if the screen width is smaller than 400px
 

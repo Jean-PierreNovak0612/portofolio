@@ -24,7 +24,7 @@
 /* Styling the sublink list. */
 
 .navbar-sublink-container {
-	padding: 0 30px;
+	padding: 0 20px;
 	list-style: none;
 	display: none;
 }
@@ -40,13 +40,16 @@
 
 	.navbar-sublink-container {
 		background-color: var(--light);
+		padding: 10px 20px;
 		color: var(--dark);
 		display: block;
+		width: 260px;
 		transform: scale(1, 0);
 		transform-origin: top;
 		position: absolute;
 		top: 100%;
 		border-top: 1px solid rgb(223, 223, 223);
+		border-bottom: 1px solid rgb(223, 223, 223);
 		transition: transform 250ms ease-in-out;
 	}
 
