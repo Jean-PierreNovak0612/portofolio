@@ -39,9 +39,9 @@
 	/* Changing the sublink list depending on how far the user has scrolled */
 
 	.navbar-sublink-container {
-		background-color: var(--light);
+		background-color: transparent;
 		padding: 10px 20px;
-		color: var(--dark);
+		color: var(--light);
 		display: block;
 		width: 260px;
 		transform: scale(1, 0);
@@ -59,7 +59,6 @@
 
 	.navbar-sublink-container.scrolled {
 		background-color: var(--dark);
-		color: var(--light);
 	}
 
 	/* Styling the sublinks */
@@ -85,7 +84,7 @@
 		content: '';
 		display: block;
 		height: 3px;
-		background: var(--dark);
+		background: var(--light);
 		position: absolute;
 		bottom: -0.2em;
 		left: 0;

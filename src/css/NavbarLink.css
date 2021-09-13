@@ -2,17 +2,13 @@
 
 .navbar-link {
 	font-family: 'Patua One', cursive;
-	letter-spacing: .1rem;
+	letter-spacing: 0.1rem;
 	font-size: 20px;
 	display: inline-block;
 	width: 100%;
 	text-decoration: none;
-	color: var(--dark);
-	padding: 7px 10px;
-}
-
-.navbar-link.active {
 	color: var(--light);
+	padding: 7px 10px;
 }
 
 /* Adding styles for larger displays */
@@ -35,7 +31,7 @@
 		content: '';
 		display: block;
 		height: 3px;
-		background: var(--dark);
+		background: var(--light);
 		position: absolute;
 		bottom: -0.2em;
 		left: 0;

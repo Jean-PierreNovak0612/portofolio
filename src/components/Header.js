@@ -45,10 +45,8 @@ const Header = () => {
     // Function that changes the logo image depending on how far the user has scrolled
 
     const displayLogo = () => {
-        if (navigation && width) return process.env.PUBLIC_URL + '/images/favicon.png';
-        else if (navigation) return process.env.PUBLIC_URL + '/images/logo_dark.png';
-        else if (width) return process.env.PUBLIC_URL + '/images/light_favicon.png';
-        return process.env.PUBLIC_URL + '/images/logo_light.png';
+        if (width) return process.env.PUBLIC_URL + '/images/favicon.png';
+        return process.env.PUBLIC_URL + '/images/logo_dark.png';
     }
 
     // Function that toggles the toggle variable on click

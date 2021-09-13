@@ -23,7 +23,7 @@
 .ham-menu {
 	width: 50px;
 	height: 6px;
-	background-color: var(--dark);
+	background-color: var(--light);
 	transition: all 0.5s ease-in-out;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -35,10 +35,10 @@
 	position: absolute;
 	width: 50px;
 	height: 6px;
-	background-color: var(--dark);
+	background-color: var(--light);
 	transition: all 0.5s ease-in-out;
 	border-radius: 5px;
-	box-shadow: 0 2px 7px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
 }
 
 .ham-menu::before {
@@ -81,8 +81,8 @@
 	justify-content: space-between;
 	height: 80px;
 	width: 100%;
-	background-color: var(--light);
-	color: var(--dark);
+	background-color: var(--dark);
+	z-index: 2;
 }
 
 .navigation.active {
@@ -97,8 +97,8 @@
 	position: absolute;
 	width: 100%;
 	top: 100%;
-	background-color: var(--light);
-	color: var(--dark);
+	background-color: var(--dark);
+	color: var(--light);
 	transform: scale(1, 0);
 	transform-origin: top;
 	max-height: 300px;
@@ -133,6 +133,12 @@
 /* Stylings for bigger dispalys */
 
 @media (min-width: 1000px) {
+	/* Turning the navbar transparent */
+
+	.navigation {
+		background-color: transparent;
+	}
+
 	/* Hiding the hamburger menu */
 
 	.ham-menu-container {
@@ -151,6 +157,8 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+		color: var(--light);
+		background-color: transparent;
 	}
 
 	/* Displaying the link list in the navbar */

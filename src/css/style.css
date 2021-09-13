@@ -1,22 +1,39 @@
 /* Reseting the paddings and margins, as well as seting the box sizing */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 /* Defining the colors */
 
 :root {
-    --dark: #1d1c19;
-    --light: #f7f9fd;
-    --green: #748579;
+	--dark: #1d1c19;
+	--light: #f7f9fd;
+	--green: #748579;
 }
 
 /* Setting the background color of the entire page to off-whte */
 
-body, html {
-    background-color: var(--light);
+body,
+html {
+	background-color: var(--light);
 }
 
+.background {
+	background: url('../assets/code.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+.layer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
